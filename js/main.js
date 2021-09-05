@@ -258,7 +258,7 @@ function updateUi(acc) {
 }
 
 const displayTime = function () {
-  let time = 120;
+  let time = 300;
 
   const tick = () => {
     let sec = String(Math.floor(time % 60)).padStart(2, 0);
@@ -282,11 +282,6 @@ const displayTime = function () {
 
 // ================= EVENT HANDLER ============================
 let currentAccount, timer;
-
-// ================ INITIAL ===================
-currentAccount = account1;
-updateUi(currentAccount);
-containerApp.style.opacity = 100;
 
 // ================ TODAYS DATE ==================;
 
